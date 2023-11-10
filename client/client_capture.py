@@ -6,11 +6,10 @@ from tensorflow.keras.models import load_model
 
 IMAGE_HEIGHT = 480
 IMAGE_WIDTH = 640
-RGB_MAX = 255
 
 def get_number_of_bee_and_contour_image(predict_image):
     pass
-    
+
 if __name__ == '__main__':
     time.sleep(5)
         
@@ -23,8 +22,8 @@ if __name__ == '__main__':
         ret, original_image = cap.read()
         cropped_image = original_image[IMAGE_HEIGHT//2:, :]
         
-        predict_image = autoencoder.predict(np.expand_dims(np.array(original_image) / RGB_MAX, axis=0))
-        predict_image = (predict_image[0] * RGB_MAX).astype(np.uint8)
+        predict_image = autoencoder.predict(np.expand_dims(np.array(original_image) / 255, axis=0))
+        predict_image = (predict_image[0] * 255).astype(np.uint8)
     
         number_of_bee, result_image = get_number_of_bee_and_contour_image(predict_image)
         
@@ -59,8 +58,8 @@ if __name__ == '__main__':
         prev_number_of_bee = number_of_bee
         
         time.sleep(0.05)
-        
-def contour(predict_image):
+
+def get_number_of_bee_and_contour_image(predict_image):
     previous_objects = []
     next_object_number = 1
     result_image = predict_image
