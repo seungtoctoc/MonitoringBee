@@ -20,17 +20,18 @@ def index():
     else:
         search_results = image_names_sorted
 
-    images_grouped = [search_results[i:i + 4] for i in range(0, len(search_results), 4)]
+    image_groups = [search_results[i:i + 4] for i in range(0, len(search_results), 4)]
 
     loaded_data = {}
     
     with open('/server/download/data.txt', 'r') as file:
         lines = file.readlines() 
+        
         for line in lines:
             key, value = line.strip().split(': ')
             loaded_data[key] = value 
 
-    return render_template('index.html', image_groups=images_grouped, search_query=search_query, loaded_data = loaded_data)
+    return render_template('index.html', image_groups=image_groups, search_query=search_query, loaded_data = loaded_data)
 
 if __name__ == '__main__':
     app.run(debug=True)

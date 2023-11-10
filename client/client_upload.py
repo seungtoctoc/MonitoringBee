@@ -1,11 +1,9 @@
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from google.oauth2 import service_account
-
 import os
 import time
 
-# API 설정
 file_folder = '/home/stt-pi/upload'
 json_file = "/home/stt-pi/"
 
@@ -33,6 +31,3 @@ if __name__ == '__main__':
                     file_drive = service.files().create(body=file_data, media_body=media, fields='id').execute()
             
                     os.remove(file_path)
-            
-
-        
