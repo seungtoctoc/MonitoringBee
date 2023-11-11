@@ -1,6 +1,7 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/102455571/282228390-547fdde0-caf2-497e-bc40-0277cde82fea.png">
 </p>
+
 **라즈베리파이**
 카메라, LTE 모듈 장착
 - 0.5초마다 이미지를 촬영합니다.
