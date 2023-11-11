@@ -22,7 +22,7 @@
   <img src="https://user-images.githubusercontent.com/102455571/282229094-9f58153c-1ec6-40fe-bfe9-f655369ff617.jpg">
 </p>
 
-- autoencoder.ipynb : 오토인코더 학습 코드
+- autoencoder.ipynb : 오토인코더 학습 코드. 학습에는 총 1080쌍의 이미지들 사용
 - autoencoder_16 : 인코더, 디코더 레이어 각각 2개, ephochs 50으로 학습한 오토인코더
 - autoencoder_32 : 인코더, 디코더 레이어 각각 3개, ephochs 50으로 학습한 오토인코더
 - autoencoder_64 : 인코더, 디코더 레이어 각각 4개, ephochs 50으로 학습한 오토인코더
@@ -51,4 +51,4 @@
   <img src="https://github.com/seungtoctoc/MonitoringBee/assets/102455571/469ab770-bfa2-432c-98d6-879d05a232f3">
 </p>
 
-- 학습(original(왼쪽), mask(오른쪽))과 테스트(test)에 사용된 이미지들
+- 학습(original(왼쪽), mask(오른쪽))과 테스트(test)에 사용된 이미지들. 
