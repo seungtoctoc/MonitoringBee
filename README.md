@@ -51,4 +51,4 @@
   <img src="https://github.com/seungtoctoc/MonitoringBee/assets/102455571/469ab770-bfa2-432c-98d6-879d05a232f3">
 </p>
 
-- 학습(original, mask)과 테스트(test)에 사용된 이미지들
+- 학습(original(왼쪽), mask(오른쪽))과 테스트(test)에 사용된 이미지들
