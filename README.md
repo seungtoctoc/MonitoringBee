@@ -12,15 +12,22 @@
 - 라즈베리파이가 구글 드라이브에 업로드한 npy파일들을 다운로드 합니다.
 - 4개의 이미지로 저장하고, 개체 수 정보는 txt파일에 저장합니다.
 - 플라스크를 사용해 이미지들과 개체 수를 볼 수 있는 웹사이트를 구현했습니다. 검색 기능도 포함합니다.
+----------
+<br><br>
 
 **autoencoder**
+<p align="center">
+  <img src="[https://user-images.githubusercontent.com/102455571/282228390-547fdde0-caf2-497e-bc40-0277cde82fea.png](https://user-images.githubusercontent.com/102455571/282229015-0c6cc16f-aa48-4f9f-bb13-75a51447a58e.png)">
+  <img src="[[https://user-images.githubusercontent.com/102455571/282228390-547fdde0-caf2-497e-bc40-0277cde82fea.png](https://user-images.githubusercontent.com/102455571/282229015-0c6cc16f-aa48-4f9f-bb13-75a51447a58e.png)](https://user-images.githubusercontent.com/102455571/282229026-f5dea5c5-b58c-4eb3-bc14-1ad4ce300624.png)">
+</p>
+
 - autoencoder.ipynb : 오토인코더 학습 코드
 - autoencoder_16 : 인코더, 디코더 레이어 각각 2개, ephochs 50으로 학습한 오토인코더
 - autoencoder_32 : 인코더, 디코더 레이어 각각 3개, ephochs 50으로 학습한 오토인코더
 - autoencoder_64 : 인코더, 디코더 레이어 각각 4개, ephochs 50으로 학습한 오토인코더
 - autoencoder3_200_32 : 인코더, 디코더 레이어 각각 3개, ephochs 200, batch size 32로 학습한 오토인코더
 - autoencoder3_200_64 : 인코더, 디코더 레이어 각각 3개, ephochs 200, batch size 64로 학습한 오토인코더
-- autoencoder3_200_128 : 인코더, 디코더 레이어 각각 3개, ephochs 200, batch size 128로 학습한 오토인코더
+- autoencoder3_200_128 : 인코더, 디코더 레이어 각각 3개, ephochs 200, batch size 128로 학습한 오토인코더<br><br>
 
 **client (raspberry pi)**
 - client_capture.py : 이미지 촬영, 오토인코더 적용, 컨투어 적용, 개체 수 예측, 개체 수 변화 시 위에서 설명한 4개 이미지들과 2개 변수를 npy 파일로 저장
