@@ -12,15 +12,14 @@
 - 라즈베리파이가 구글 드라이브에 업로드한 npy파일들을 다운로드 합니다.
 - 4개의 이미지로 저장하고, 개체 수 정보는 txt파일에 저장합니다.
 - 플라스크를 사용해 이미지들과 개체 수를 볼 수 있는 웹사이트를 구현했습니다. 검색 기능도 포함합니다.
-----------
 <br><br>
-
+----------
 **autoencoder**
 <p align="center">
-  <img src="[https://user-images.githubusercontent.com/102455571/282228390-547fdde0-caf2-497e-bc40-0277cde82fea.png](https://user-images.githubusercontent.com/102455571/282229015-0c6cc16f-aa48-4f9f-bb13-75a51447a58e.png)">
+  <img src="https://user-images.githubusercontent.com/102455571/282228390-547fdde0-caf2-497e-bc40-0277cde82fea.png">
 </p>
-<p>
-  <img src="[[https://user-images.githubusercontent.com/102455571/282228390-547fdde0-caf2-497e-bc40-0277cde82fea.png](https://user-images.githubusercontent.com/102455571/282229015-0c6cc16f-aa48-4f9f-bb13-75a51447a58e.png)](https://user-images.githubusercontent.com/102455571/282229026-f5dea5c5-b58c-4eb3-bc14-1ad4ce300624.png)">
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/102455571/282228390-547fdde0-caf2-497e-bc40-0277cde82fea.png">
 </p>
 
 - autoencoder.ipynb : 오토인코더 학습 코드
@@ -41,6 +40,9 @@
 - server.ipynb, server.py : 라즈베리파이가 구글 드라이브에 업로드한 파일들을 다운로드. 4개 이미지와 2개 변수로 나누어 저장
 
 **flask (server)**
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/102455571/282228390-547fdde0-caf2-497e-bc40-0277cde82fea.png">
+</p>
 - flask_server.py : 서버에서 다운받은 이미지들을 웹사이트에서 볼 수 있게 하는 flask 코드
 
 **images**
