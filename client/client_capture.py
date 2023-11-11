@@ -49,7 +49,8 @@ if __name__ == '__main__':
                 file_path = f"/home/stt-pi/upload/{file_name}"
         
                 np.save(file_path, upload_list)
-                # print("[capture] save file", current_time+".npy")
+                
+                print("[capture] save file", current_time+".npy")
                 
                 test_save = True
 

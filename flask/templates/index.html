@@ -7,9 +7,8 @@
     <title>bee</title>
 </head>
 <body class="container">
-
-    
     <p class="fs-1 fw-bold m-5 d-flex justify-content-center" id ="gallery">Gallery</p>
+
     <form action="/" method="GET" class="mb-4 d-flex justify-content-center">
         <div class="input-group">
             <input type="text" class="form-control d-flex justify-content-center" placeholder="image name" aria-label="Recipient's username" aria-describedby="button-addon2" id="search" name="search">
@@ -17,45 +16,44 @@
         </div>
     </form>
 
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        {% for image_group in image_groups %}
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_{{image_group[0][0:10]}}" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        {% set formatted_name = image_group[0][0:2] + '월 ' + image_group[0][2:4] + '일 ' + image_group[0][4:6] + '시 ' + image_group[0][6:8] + '분 ' + image_group[0][8:10] + '초' %}
+                        {{formatted_name}}
+                    </button>
+                </h2>
 
-    <div class="accordion" id="accordionPanelsStayOpenExample"></div>
-    {% for image_group in image_groups %}
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_{{image_group[0][0:10]}}" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                {% set formatted_name = image_group[0][0:2] + '월 ' + image_group[0][2:4] + '일 ' + image_group[0][4:6] + '시 ' + image_group[0][6:8] + '분 ' + image_group[0][8:10] + '초' %}
-                {{formatted_name}}
-            </button>
-            </h2>
-            <div id="collapse_{{image_group[0][0:10]}}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body row">
-                    {% for image_name in image_group %}
-                        <div class="col-md-3">
-                            <img src="{{ url_for('static', filename=image_name) }}" alt="{{ image_name }}" class="img-fluid">
-                        </div>
-                    {% endfor %}
-                </div>
-                <div class = 'm-4'>
-                    {% set prev_bee = image_group[0][:-6] + '_prev_bee' %}
-                    {% set now_bee = image_group[0][:-6] + '_now_bee' %}
-                    
-                    <div class="d-flex flex-row bd-highlight mb-3">
-                        <div class="text-center w-50 fs-4 bd-highlight">prev_bee : {{loaded_data[prev_bee]}}</div>
-                        <div class="text-center w-50 fs-4 bd-highlight">now_bee : {{loaded_data[now_bee]}}</div>
+                <div id="collapse_{{image_group[0][0:10]}}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body row">
+                        {% for image_name in image_group %}
+                            <div class="col-md-3">
+                                <img src="{{ url_for('static', filename=image_name) }}" alt="{{ image_name }}" class="img-fluid">
+                            </div>
+                        {% endfor %}
                     </div>
 
+                    <div class = 'm-4'>
+                        {% set prev_bee = image_group[0][:-6] + '_prev_bee' %}
+                        {% set now_bee = image_group[0][:-6] + '_now_bee' %}
+                        
+                        <div class="d-flex flex-row bd-highlight mb-3">
+                            <div class="text-center w-50 fs-4 bd-highlight">prev_bee : {{loaded_data[prev_bee]}}</div>
+                            <div class="text-center w-50 fs-4 bd-highlight">now_bee : {{loaded_data[now_bee]}}</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    {% endfor %}
+        {% endfor %}
     </div>
 
-    
     <p class="fs-1 fw-bold m-5 d-flex justify-content-center" id ="gallery">Gallery</p>
-
 
     <script>
         var gallery = document.getElementById('gallery');
+        
         gallery.addEventListener('click', function() {
             location.reload();
         });
