@@ -16,10 +16,10 @@
 ----------
 **autoencoder**
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/102455571/282228390-547fdde0-caf2-497e-bc40-0277cde82fea.png">
+  <img src="https://user-images.githubusercontent.com/102455571/282229061-a56a0f34-984c-4bff-8877-41bb4ca747a0.jpg">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/102455571/282228390-547fdde0-caf2-497e-bc40-0277cde82fea.png">
+  <img src="https://user-images.githubusercontent.com/102455571/282229094-9f58153c-1ec6-40fe-bfe9-f655369ff617.jpg">
 </p>
 
 - autoencoder.ipynb : 오토인코더 학습 코드
