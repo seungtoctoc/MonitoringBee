@@ -41,7 +41,7 @@
 
 **flask (server)**
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/102455571/282228390-547fdde0-caf2-497e-bc40-0277cde82fea.png">
+  <img src="https://user-images.githubusercontent.com/102455571/282229431-c219658e-5e37-4cf5-b572-c042ff88114a.png">
 </p>
 - flask_server.py : 서버에서 다운받은 이미지들을 웹사이트에서 볼 수 있게 하는 flask 코드
 
