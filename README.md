@@ -34,16 +34,16 @@
 - client_capture.py : 이미지 촬영, 오토인코더 적용, 컨투어 적용, 개체 수 예측, 개체 수 변화 시 위에서 설명한 4개 이미지들과 2개 변수를 npy 파일로 저장
 - client_uplaod.py : upload 폴더에 새로운 파일이 저장되면 구글 드라이브에 업로드
 - shut_down.py : 버튼을 누르면 종료
-- client.py : 위 3개 파일을 비 동기적으로 실행
+- client.py : 위 3개 파일을 비 동기적으로 실행<br><br>
 
 **server**
-- server.ipynb, server.py : 라즈베리파이가 구글 드라이브에 업로드한 파일들을 다운로드. 4개 이미지와 2개 변수로 나누어 저장
+- server.ipynb, server.py : 라즈베리파이가 구글 드라이브에 업로드한 파일들을 다운로드. 4개 이미지와 2개 변수로 나누어 저장<br><br>
 
 **flask (server)**
 <p align="center">
   <img src="https://user-images.githubusercontent.com/102455571/282229431-c219658e-5e37-4cf5-b572-c042ff88114a.png">
 </p>
-- flask_server.py : 서버에서 다운받은 이미지들을 웹사이트에서 볼 수 있게 하는 flask 코드
+- flask_server.py : 서버에서 다운받은 이미지들을 웹사이트에서 볼 수 있게 하는 flask 코드<br><br>
 
 **images**
 - 학습(original, mask)과 테스트(test)에 사용된 이미지들
