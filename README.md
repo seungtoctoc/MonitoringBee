@@ -18,6 +18,8 @@
 **autoencoder**
 <p align="center">
   <img src="[https://user-images.githubusercontent.com/102455571/282228390-547fdde0-caf2-497e-bc40-0277cde82fea.png](https://user-images.githubusercontent.com/102455571/282229015-0c6cc16f-aa48-4f9f-bb13-75a51447a58e.png)">
+</p>
+<p>
   <img src="[[https://user-images.githubusercontent.com/102455571/282228390-547fdde0-caf2-497e-bc40-0277cde82fea.png](https://user-images.githubusercontent.com/102455571/282229015-0c6cc16f-aa48-4f9f-bb13-75a51447a58e.png)](https://user-images.githubusercontent.com/102455571/282229026-f5dea5c5-b58c-4eb3-bc14-1ad4ce300624.png)">
 </p>
 
